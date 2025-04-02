@@ -1,4 +1,4 @@
-package org.codeship;
+package org.codeship.stream.api;
 
 import java.util.*;
 import java.util.stream.Collectors;
