@@ -1,4 +1,4 @@
-package org.codeship;
+package org.codeship.stream.api;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -61,7 +61,7 @@ public class StreamAPIEmployeeAssignment {
 		System.out.println(list);
 		System.out.println("------------------------------");
 		
-		//1. Display Employees having age greater than or equal to 22
+//		1. Display Employees having age greater than or equal to 22
 //		2. Count total no. of Employees having age greater than or equal to 22
 //		3. Group employees designation wise
 //		4. Count employees designation wise

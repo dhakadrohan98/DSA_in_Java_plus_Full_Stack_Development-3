@@ -1,6 +1,6 @@
 package org.codeship.binarysearch.revision;
 
-public class SearchInRotatedSortedArray_I {
+public class SearchInRotatedSortedArray_UniqueElements {
 
 	// TC: O(logn)
 	// SC: O(1)
@@ -14,12 +14,14 @@ public class SearchInRotatedSortedArray_I {
 				ans = mid;
 				break;
 			} else if (arr[low] <= arr[mid]) {
+				//left half is sorted
 				if (arr[low] <= target && target <= arr[mid]) {
 					high = mid;
 				} else {
 					low = mid + 1;
 				}
 			} else if (arr[mid + 1] <= arr[high]) {
+				//right half is sorted
 				if (arr[mid + 1] <= target && target <= arr[high]) {
 					low = mid + 1;
 				} else {
