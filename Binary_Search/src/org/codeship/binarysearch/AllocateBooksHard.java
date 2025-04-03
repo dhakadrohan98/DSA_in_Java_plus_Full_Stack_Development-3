@@ -7,6 +7,9 @@ import java.util.List;
 
 public class AllocateBooksHard {
 
+	//TC: O(log2 (sum - max + 1) * n) + O(n)
+    //SC: O(1)
+	
 	public static int countStudents(ArrayList<Integer> list, int mid) {
 		int count = 0, i = 0;
 		
