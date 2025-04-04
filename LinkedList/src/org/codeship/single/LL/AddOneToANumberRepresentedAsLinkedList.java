@@ -1,8 +1,9 @@
-package org.single.ll;
+package org.codeship.single.LL;
 
 public class AddOneToANumberRepresentedAsLinkedList {
 
 	private class Node {
+		
 		public int data;
 		public Node next;
 

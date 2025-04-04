@@ -1,9 +1,9 @@
-package org.codebix;
+package org.codeship.single.LL.revision;
 
 public class Node {
 
 	int data;
-	public Node next;
+	Node next;
 
 	public Node(int data) {
 		super();

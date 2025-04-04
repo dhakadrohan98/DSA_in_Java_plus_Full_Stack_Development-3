@@ -1,4 +1,4 @@
-package org.single.ll;
+package org.codeship.single.LL;
 
 public class SortLinkedList0s1s2s {
 

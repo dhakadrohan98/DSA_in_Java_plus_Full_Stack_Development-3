@@ -1,4 +1,4 @@
-package org.single.ll;
+package org.codeship.single.LL;
 
 import java.util.ArrayList;
 import java.util.List;

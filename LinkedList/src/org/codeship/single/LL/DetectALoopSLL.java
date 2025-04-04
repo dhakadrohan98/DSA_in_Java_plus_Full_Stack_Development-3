@@ -1,4 +1,4 @@
-package org.single.ll;
+package org.codeship.single.LL;
 
 public class DetectALoopSLL {
 

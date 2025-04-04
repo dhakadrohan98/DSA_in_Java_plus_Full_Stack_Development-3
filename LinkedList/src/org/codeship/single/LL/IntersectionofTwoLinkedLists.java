@@ -1,4 +1,4 @@
-package org.single.ll;
+package org.codeship.single.LL;
 
 import java.util.HashMap;
 import java.util.Map;
