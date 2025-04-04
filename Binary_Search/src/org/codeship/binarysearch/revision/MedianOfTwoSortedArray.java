@@ -2,9 +2,9 @@ package org.codeship.binarysearch.revision;
 
 public class MedianOfTwoSortedArray {
 
-	//TC: O(log min(n1, n2))
-    //SC: O(1)
-    public double findMedianSortedArrays(int[] arr1, int[] arr2) {
+	// TC: O(log min(n1, n2))
+	// SC: O(1)
+	public double findMedianSortedArrays(int[] arr1, int[] arr2) {
 		int n1 = arr1.length;
 		int n2 = arr2.length;
 		if (n1 > n2) {
@@ -13,7 +13,7 @@ public class MedianOfTwoSortedArray {
 		int low = 0, high = n1;
 		int leftSide = (n1 + n2 + 1) / 2;
 		int totalElements = n1 + n2;
-		
+
 		while (low <= high) {
 			int mid1 = (low + high) / 2;
 			int mid2 = leftSide - mid1;
@@ -21,8 +21,10 @@ public class MedianOfTwoSortedArray {
 			int l1 = Integer.MIN_VALUE, l2 = Integer.MIN_VALUE;
 			int r1 = Integer.MAX_VALUE, r2 = Integer.MAX_VALUE;
 			// mid1 might go index of out of bound, check the boundary condition
-			if (mid1 < n1) r1 = arr1[mid1];
-			if (mid2 < n2) r2 = arr2[mid2];
+			if (mid1 < n1)
+				r1 = arr1[mid1];
+			if (mid2 < n2)
+				r2 = arr2[mid2];
 			if (mid1 - 1 >= 0) {
 				l1 = arr1[mid1 - 1];
 			}
@@ -43,7 +45,7 @@ public class MedianOfTwoSortedArray {
 				low = mid1 + 1;
 			}
 		}
-		//dummy return 0.0
+		// dummy return 0.0
 		return 0.0;
 	}
 
