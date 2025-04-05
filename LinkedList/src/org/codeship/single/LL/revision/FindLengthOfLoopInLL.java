@@ -2,7 +2,7 @@ package org.codeship.single.LL.revision;
 
 import java.util.*;
 
-public class FindLengthOfLoop {
+public class FindLengthOfLoopInLL {
 	// TC: O(2n)
 	// SC: O(n)
 	// Function to find the length of a loop in the linked list.
