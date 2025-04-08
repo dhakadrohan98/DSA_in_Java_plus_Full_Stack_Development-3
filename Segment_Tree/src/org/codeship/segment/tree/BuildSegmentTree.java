@@ -25,7 +25,8 @@ public class BuildSegmentTree {
 		int n = arr.length;
 //		int height = (int)Math.log(n/2);
 //		int size = (int)Math.pow(2, height) - 1;
-		st = new int[2 * n - 1];
+		//avoid index overflow
+		st = new int[4 * n];
 
 		// build the segment tree
 		buildSegmentTree(0, 0, n - 1, arr);
