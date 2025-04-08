@@ -1,18 +1,18 @@
 package org.codeship.single.LL.revision;
 
-class Node2 {	
-	
+class Node2 {
+
 	int data;
 	Node2 next;
 	Node2 child;
-	
+
 	public Node2(int data) {
 		super();
 		this.data = data;
 		this.next = null;
 		this.child = null;
 	}
-	
+
 }
 
 public class FlatteningALinkedList {

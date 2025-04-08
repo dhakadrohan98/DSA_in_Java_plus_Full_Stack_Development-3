@@ -15,8 +15,8 @@ public class MergeKSortedLists {
 	}
 
 	// TC: O(k logk) + O(n * k * 2* logk)
-		// SC: O(k) due to nodes in pq
-		// pq<int, ListNode>
+	// SC: O(k) due to nodes in pq
+	// pq<int, ListNode>
 	public ListNode mergeKLists(ListNode[] lists) {
 		int k = lists.length;
 		PriorityQueue<Pair> pq = new PriorityQueue<>((a, b) -> a.val - b.val);
