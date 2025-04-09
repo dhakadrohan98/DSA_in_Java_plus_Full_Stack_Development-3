@@ -6,9 +6,9 @@ public class NextSmallerToRight {
 
 	// TC: O(n)
 	// SC: O(n)
-	public static ArrayList<Integer> nextSmallerElement(ArrayList<Integer> arr, int n) {
+	public static List<Integer> nextSmallerElement(List<Integer> arr, int n) {
 		Stack<Integer> st = new Stack<>();
-		ArrayList<Integer> list = new ArrayList<>();
+		List<Integer> list = new ArrayList<>();
 		// initially push the last element into stack
 		st.push(arr.get(n - 1));
 		// for last element there is no one at the right side
@@ -17,7 +17,7 @@ public class NextSmallerToRight {
 			while (!st.isEmpty() && st.peek() >= arr.get(i)) {
 				st.pop();
 			}
-			// smaller element is left at the top if stack is not empty
+			//smaller element is left only & present at the top, if and only if stack is not empty.
 			if (!st.isEmpty()) {
 				list.add(st.peek());
 			} else {
@@ -30,7 +30,9 @@ public class NextSmallerToRight {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		List<Integer> arr = Arrays.asList(6, 2, 5, 4, 5, 1, 6);
+		List<Integer> result = nextSmallerElement(arr, arr.size());
+		System.out.println(result);
 
 	}
 
