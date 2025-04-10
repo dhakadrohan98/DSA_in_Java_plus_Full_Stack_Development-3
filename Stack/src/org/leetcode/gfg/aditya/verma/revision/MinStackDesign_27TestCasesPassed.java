@@ -15,12 +15,12 @@ class Pair1 {
 
 //TC: O(1)
 //SC: O(n)
-public class MinStackDesign {
+public class MinStackDesign_27TestCasesPassed {
 	
 	Stack<Pair1> st = null;
     List<Integer> mini = null;
 
-    public MinStackDesign() {
+    public MinStackDesign_27TestCasesPassed() {
         st = new Stack<>();
         mini = new ArrayList<>();
         //currently add Integer.MAX_VALUE
