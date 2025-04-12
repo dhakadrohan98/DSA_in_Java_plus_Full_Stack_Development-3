@@ -19,6 +19,7 @@ public class LevelOrderTraversal {
 	        
 	        while (!queue.isEmpty()) {
 	          List<Integer> currLevel = new ArrayList<>();
+	          //how many nodes to be traversed at the current level
 	          int size = queue.size();
 	          for (int i = 0; i < size; i++) {
 	            TreeNode node = queue.poll();
