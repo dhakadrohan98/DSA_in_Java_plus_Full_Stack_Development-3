@@ -8,7 +8,7 @@ public class NonOverlappingIntervals {
     //SC: O(1)
     public int eraseOverlapIntervals(int[][] arr) {
         int n = arr.length;
-        //sort the array based on ending time
+        //sort	 the array based on ending time
         Arrays.sort(arr, (a, b) -> a[1] - b[1]);
         int lastEndTime = arr[0][1];
         int cnt = 1;
