@@ -34,6 +34,7 @@ public class CombinationSumII {
 
             ds.add(arr[i]);
             helper(i - 1, target - arr[i], arr, ds, ans);
+            //while backtracking remove the last element from ds
             ds.remove(ds.size() - 1);
             i--;
         }
