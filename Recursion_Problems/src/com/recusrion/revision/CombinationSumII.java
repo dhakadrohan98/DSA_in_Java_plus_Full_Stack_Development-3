@@ -2,14 +2,13 @@ package com.recusrion.revision;
 
 import java.util.*;
 
-public class CombinationSum {
+public class CombinationSumII {
 	
-	//TC: O(2^n)
-	//SC: O(n)
-	public List<List<Integer>> combinationSum(int[] arr, int target) {
+	public List<List<Integer>> combinationSum2(int[] arr, int target) {
         List<List<Integer>> ans = new ArrayList<>();
         List<Integer> ds = new ArrayList<>();
-        helper(0, target, arr, ds, ans);
+        Arrays.sort(arr);
+        helper(arr.length - 1, target, arr, ds, ans);
         return ans;
     }
 
@@ -21,16 +20,23 @@ public class CombinationSum {
             return;
         }
 
-        if(indx >= arr.length) {   
+        if(indx < 0 || target < 0) {   
             return;
         }
 
-        if(target >= arr[indx]) {
-            ds.add(arr[indx]);
-            helper(indx, target - arr[indx], arr, ds, ans);
+        // skip duplicates (this works correctly only if array is sorted)
+        int i = indx;
+        while (i >= 0) {
+            if (i < indx && arr[i] == arr[i + 1]) {
+                i--;
+                continue;
+            }
+
+            ds.add(arr[i]);
+            helper(i - 1, target - arr[i], arr, ds, ans);
             ds.remove(ds.size() - 1);
+            i--;
         }
-        helper(indx+1, target, arr, ds, ans);
     }
     
 	public static void main(String[] args) {
