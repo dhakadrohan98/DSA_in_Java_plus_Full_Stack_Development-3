@@ -6,26 +6,17 @@ import java.util.List;
 //TC: O(n) n -> total no. of nodes
 //SC: O(logn) average case due to stack space
 //SC: O(n) worst case due to skew tree
-class TreeNode {
-	
-	int val;
-	List<TreeNode> children;
-	
-	public TreeNode(int val) {
-		this.val = val;
-	}
-}
 
-public class DFSInNAryTree {
+public class DFS_NAryTree {
 	
-	private static void dfs(TreeNode root) {
+	private static void dfs(Node root) {
 		//base case
 		if(root.children == null) {
 			return;
 		}
 		
 		String str = root.val + " -> ";
-		List<TreeNode> list = root.children;
+		List<Node> list = root.children;
 		//children of current node
 		int childrensSize = list.size();
 		for(int i = 0; i < childrensSize; i++) {
@@ -41,12 +32,12 @@ public class DFSInNAryTree {
 	}
 
 	public static void main(String[] args) {
-		TreeNode root = new TreeNode(1);
-		TreeNode node1 = new TreeNode(2);
-		TreeNode node2 = new TreeNode(3);
-		TreeNode node3 = new TreeNode(4);
-		TreeNode node4 = new TreeNode(5);
-		TreeNode node5 = new TreeNode(6);
+		Node root = new Node(1);
+		Node node1 = new Node(2);
+		Node node2 = new Node(3);
+		Node node3 = new Node(4);
+		Node node4 = new Node(5);
+		Node node5 = new Node(6);
 		root.children = new ArrayList<>();
 		root.children.add(node1);
 		root.children.add(node2);
