@@ -4,12 +4,12 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class 	 {
+public class CountLeafNodeBFS {
 
 	static int count = 0;
 
 	public static int countLeafBfs(TreeNode1 root) {
-		//Through BFS (level order traversal)
+		// Through BFS (level order traversal)
 		if (root == null)
 			return count;
 		Queue<TreeNode1> q = new LinkedList();
