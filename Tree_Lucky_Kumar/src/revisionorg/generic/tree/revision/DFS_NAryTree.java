@@ -7,7 +7,7 @@ import java.util.List;
 //SC: O(logn) average case due to stack space
 //SC: O(n) worst case due to skew tree
 
-public class DFSInNAryTree {
+public class DFS_NAryTree {
 	
 	private static void dfs(Node root) {
 		//base case
