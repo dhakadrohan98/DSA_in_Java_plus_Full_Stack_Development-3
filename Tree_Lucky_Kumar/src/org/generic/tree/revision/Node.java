@@ -1,4 +1,4 @@
-package revisionorg.generic.tree.revision;
+package org.generic.tree.revision;
 
 import java.util.List;
 
