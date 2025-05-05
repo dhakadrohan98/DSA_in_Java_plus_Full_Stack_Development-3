@@ -2,10 +2,10 @@ package org.binary.tree.revision;
 
 import java.util.*;
 
+//TC: O(n)
+// SC: O(n) stack space + O(n) hmap space
 public class PathSum_III {
 
-	// TC: O(n)
-	// SC: O(n) stack space + O(n) hmap space
 	int count = 0;
 
 	public int pathSum(TreeNode root, int targetSum) {

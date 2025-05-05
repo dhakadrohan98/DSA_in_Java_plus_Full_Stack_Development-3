@@ -4,8 +4,8 @@ import java.util.*;
 
 public class BoundaryTraversalOfBinaryTree {
 
-	//TC: O(n + n/2 + n/2)
-	//SC: O(n) stack space (skew tree)
+	// TC: O(n + n/2 + n/2)
+	// SC: O(n) stack space (skew tree)
 	public ArrayList<Integer> boundary(Node root) {
 		ArrayList<Integer> res = new ArrayList<>();
 		// base case
