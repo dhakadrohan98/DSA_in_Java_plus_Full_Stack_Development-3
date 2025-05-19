@@ -77,13 +77,15 @@ public class StreamAPIEmployeeAssignment {
 		System.out.println();
 		
 		System.out.println("2. Count total no. of Employees having age greater than or equal to 22");
-		Map<Boolean, Long> collect1 = list.stream().collect(Collectors.partitioningBy(e -> e.age >= 22, Collectors.counting()));
+		Map<Boolean, Long> collect1 = list.stream().collect(Collectors.partitioningBy(e -> e.age >= 22, 
+				Collectors.counting()));
 		System.out.println(collect1);
 		System.out.println();
 		
 		System.out.println("3. Group employees designation wise");
 		Map<String, List<Employee>> collect2 = list.stream().collect(Collectors.groupingBy(e -> e.designation));
 		System.out.println(collect2);
+		System.out.println();
 		
 		System.out.println("4. Count employees designation wise");
 		Map<String, Long> collect3 = list.stream().collect(Collectors.groupingBy(e -> e.designation, Collectors.counting()));
