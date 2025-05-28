@@ -1,5 +1,7 @@
 package org.recursion.dp.revision;
 
+import java.util.Arrays;
+
 public class HouseRobber {
 	
 	//TC: O(n) linear no. of iteration
