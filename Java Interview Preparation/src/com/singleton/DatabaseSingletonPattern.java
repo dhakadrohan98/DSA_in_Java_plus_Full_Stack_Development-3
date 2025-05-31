@@ -16,7 +16,7 @@ class Database {
 				}
 			}
 		}
-		// returns the singleton object
+		// returns the singleton objectd
 		return dbObject;
 	}
 
