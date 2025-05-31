@@ -7,6 +7,10 @@ class GenericsClass<T> {
 	public GenericsClass(T data) {
 		this.data = data;
 	}
+	
+	public void set(T data) {
+		this.data = data;
+	}
 
 	public T getData() {
 		return this.data;
@@ -16,7 +20,7 @@ class GenericsClass<T> {
 class GenericsMethod {
 
 	public <T> void genericMethod(T data) {
-		System.out.println("Generics method");
+		System.out.println("Generic method");
 		System.out.println("Data passed: " + data);
 	}
 
@@ -34,6 +38,7 @@ public class Generics_1 {
 
 		GenericsMethod obj3 = new GenericsMethod();
 		obj3.<String>genericMethod("Machine coding round using java");
+		System.out.println();
 		obj3.<Integer>genericMethod(25);
 
 	}
