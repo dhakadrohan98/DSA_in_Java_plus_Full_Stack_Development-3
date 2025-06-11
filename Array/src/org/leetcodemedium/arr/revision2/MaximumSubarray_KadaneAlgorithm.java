@@ -9,7 +9,7 @@ public class MaximumSubarray_KadaneAlgorithm {
         int maxi = nums[0];
         int currSum = 0;
         for(int num: nums) {
-            currSum += num;1
+            currSum += num;
             maxi = Math.max(maxi, currSum);
             if(currSum < 0) {
                 currSum = 0;
