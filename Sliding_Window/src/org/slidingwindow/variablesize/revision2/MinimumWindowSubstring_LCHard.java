@@ -3,7 +3,7 @@ package org.slidingwindow.variablesize.revision2;
 import java.util.*;
 
 public class MinimumWindowSubstring_LCHard {
-	//All 268 test cases are passed
+	// All 268 test cases are passed
 	// TC: O(n)
 	// SC: O(n)
 	public String minWindow(String s, String t) {
@@ -35,7 +35,7 @@ public class MinimumWindowSubstring_LCHard {
 					if (mini > j - i + 1) {
 						start = i;
 						end = j;
-						mini = j-i+1;
+						mini = j - i + 1;
 					}
 					char ch1 = s.charAt(i);
 					if (hmap.containsKey(ch1)) {
