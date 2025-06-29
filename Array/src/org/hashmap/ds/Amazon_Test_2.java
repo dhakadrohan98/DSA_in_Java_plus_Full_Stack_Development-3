@@ -1,7 +1,7 @@
 package org.hashmap.ds;
 
 
-public class Test2 {
+public class Amazon_Test_2 {
 	
 	//visited[][] = 
 	

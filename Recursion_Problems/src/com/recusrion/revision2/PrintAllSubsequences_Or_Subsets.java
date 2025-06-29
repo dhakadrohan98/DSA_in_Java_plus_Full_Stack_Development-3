@@ -4,8 +4,8 @@ import java.util.*;
 
 public class PrintAllSubsequences_Or_Subsets {
 	
-	//TC: O(2^n)
-	//SC: O(n) //height of the tree
+	//TC: O(2^n * n(to copy all subsets element in ans list))
+	//SC: O(n recursion stack space * 2^n - total number of substes) //height of the tree
 	    private void f(int indx, int[] arr, List<Integer> ds, List<List<Integer>> ans) {
 	        //base case
 	        if(indx >= arr.length) {
