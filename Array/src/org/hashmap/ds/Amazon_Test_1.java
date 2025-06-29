@@ -1,6 +1,6 @@
 package org.hashmap.ds;
 
-public class Test {
+public class Amazon_Test_1 {
 
 	
 	/**
