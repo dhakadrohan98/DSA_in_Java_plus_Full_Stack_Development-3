@@ -93,8 +93,8 @@ public class StreamAPIEmployeeAssignment {
 		System.out.println();
 		
 		System.out.println("5. Total expense department wise");
-		Map<String, Integer> collect4 = list.stream()
-				.collect(Collectors.groupingBy(e -> e.department, Collectors.summingInt(e -> e.salary)));
+		Map<String, Long> collect4 = list.stream()
+				.collect(Collectors.groupingBy(e -> e.department, Collectors.summingLong(e -> e.salary)));
 		System.out.println(collect4);
 		System.out.println();
 		
