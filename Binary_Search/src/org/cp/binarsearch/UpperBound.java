@@ -1,4 +1,4 @@
-package org.cpbasics;
+package org.cp.binarsearch;
 
 import java.util.Arrays;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package org.cpbasics;
+package org.cp.binarsearch;
 
 public class LowerBound {
 	
