@@ -55,5 +55,7 @@ public class RequiredHeightTreeForWoodCutting {
 		getMaxHeightOfTrees();
 		
 	}
+	
+	//TC - O(N * log(h)) || N - array size | h - height of the tree
 
 }
