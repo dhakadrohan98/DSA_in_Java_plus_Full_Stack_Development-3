@@ -3,6 +3,7 @@ package org.cp.numbertheory;
 public class BinaryExponentiation {
 
 	private static final int M = 12;
+	//int M = 1e9+7; // standard value
 	
 	//TC: O(logb) base to 2
 	//SC: O(logb) depth of recursion
