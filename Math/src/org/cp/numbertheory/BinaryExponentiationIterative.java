@@ -3,6 +3,7 @@ package org.cp.numbertheory;
 public class BinaryExponentiationIterative {
 
 	// TC: O(logb) base to the 2.
+	//M = 10e9+7 (a prime number)
 	static int M = (int) 1e9 + 7;
 
 	private static int binExpItr(int a, int b) {
