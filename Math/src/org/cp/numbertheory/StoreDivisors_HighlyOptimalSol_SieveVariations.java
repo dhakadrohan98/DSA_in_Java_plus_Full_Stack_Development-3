@@ -8,23 +8,22 @@ import java.util.Scanner;
 public class StoreDivisors_HighlyOptimalSol_SieveVariations {
 
 	static int N = (int) (10e5 + 10);
-	static boolean[] isPrime = new boolean[N];
+	static int[] sum = new int[N];
 
 	// TC: O(N * logN)
+	//SC: O(N * length of maximum divisors of a number i)
 	public static void getLowest_HighestPrime() {
-		// mark all number with true initially
-		Arrays.fill(isPrime, true);
-		isPrime[0] = isPrime[1] = false;
 		ArrayList<Integer>[] divisors = (ArrayList<Integer>[]) new ArrayList[N];
 
 		for (int i = 0; i < N; i++) {
 			divisors[i] = new ArrayList<Integer>();
 		}
-		
+
 		// TC: O(N * logN)
 		for (int i = 2; i < N; i++) {
 			for (int j = i; j < N; j += i) {
 				divisors[j].add(i);
+				sum[j] += i;
 			}
 		}
 
@@ -34,6 +33,11 @@ public class StoreDivisors_HighlyOptimalSol_SieveVariations {
 				System.out.print(num + " ");
 			}
 			System.out.println();
+		}
+		System.out.println();
+		System.out.println("Sum of divisors");
+		for(int i = 1; i <= 10; i++) {
+			System.out.println("sum of " + i + " - " + sum[i]);
 		}
 	}
 
