@@ -11,7 +11,7 @@ public class StoreDivisors_HighlyOptimalSol_SieveVariations {
 	static int[] sum = new int[N];
 
 	// TC: O(N * logN)
-	//SC: O(N * length of maximum divisors of a number i)
+	// SC: O(N * length of maximum divisors of a number i)
 	public static void getLowest_HighestPrime() {
 		ArrayList<Integer>[] divisors = (ArrayList<Integer>[]) new ArrayList[N];
 
@@ -36,7 +36,7 @@ public class StoreDivisors_HighlyOptimalSol_SieveVariations {
 		}
 		System.out.println();
 		System.out.println("Sum of divisors");
-		for(int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 10; i++) {
 			System.out.println("sum of " + i + " - " + sum[i]);
 		}
 	}
