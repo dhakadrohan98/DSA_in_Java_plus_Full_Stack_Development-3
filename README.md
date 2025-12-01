@@ -26,26 +26,26 @@ If you’re preparing for product-based company interviews or enhancing your com
 
 Each pattern includes intuitive explanation + template + variations.
 
-Sliding Window
-Two Pointers
-Fast & Slow Pointers
-Merge Intervals
-Cyclic Sort
-Modified Binary Search
-Backtracking
-Top K Elements
-Heap / Priority Queue Patterns
-Prefix sum (1D, 2D), Difference Array
-DP on Arrays
-DP on Subsets
-DP on Strings
-Trees (DFS/BFS)
-Binary Search Tree Patterns
-Graph DFS/BFS
-Shortest Path (Dijkstra / BFS)
-Disjoint Set Union (Union-Find)
-Segment Trees / Fenwick Trees
-Bit Manipulation Patterns
+- Sliding Window
+- Two Pointers
+- Fast & Slow Pointers
+- Merge Intervals
+- Cyclic Sort
+- Modified Binary Search
+- Backtracking
+- Top K Elements
+- Heap / Priority Queue Patterns
+- Prefix sum (1D, 2D), Difference Array
+- DP on Arrays
+- DP on Subsets
+- DP on Strings
+- Trees (DFS/BFS)
+- Binary Search Tree Patterns
+- Graph DFS/BFS
+- Shortest Path (Dijkstra / BFS)
+- Disjoint Set Union (Union-Find)
+- Segment Trees / Fenwick Trees
+- Bit Manipulation, Bit Masking
 
 🧮 Competitive Programming Topics
 
