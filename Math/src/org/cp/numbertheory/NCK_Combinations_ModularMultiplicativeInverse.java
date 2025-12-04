@@ -2,7 +2,7 @@ package org.cp.numbertheory;
 
 import java.util.Scanner;
 
-public class NCK_Combinations_ModularMultiplicativeInverse {
+public class NCK_Combinations_	 {
 
 	/*
 	 * M is a large prime M > n
