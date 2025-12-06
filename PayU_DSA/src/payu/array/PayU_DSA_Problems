@@ -1,0 +1,124 @@
+🔥 1. Arrays & Two Pointers (10 problems)
+
+These are MOST frequently asked in PayU coding rounds.
+
+#	Problem - All completed
+1	Two Sum (sorted & unsorted variants)
+2	3Sum / 3Sum Closest
+3	Container With Most Water
+4	Maximum Subarray (Kadane’s Algorithm)
+5	Subarray Sum Equals K (Prefix-sum + hash)
+6	Minimum Size Subarray Sum (Sliding Window)
+7	Product of Array Except Self
+8	Sort Colors (Dutch National Flag)
+9	Merge Intervals
+10	Find the Duplicate Number (Floyd Cycle or Sorting)
+
+🔥 2. Sliding Window Problems (7 problems)
+
+Very important for PayU — lots of substring/subarray window questions.
+
+#	Problem - 11,12,14,17 are solved
+11	Longest Substring Without Repeating Characters
+12	Longest Repeating Character Replacement
+13	Longest Subarray with Ones after K Flips
+14	Minimum Window Substring
+15	Find All Anagrams in a String
+16	Sliding Window Maximum (Deque)
+17	Subarrays with K Distinct Integers
+
+🔥 3. String Algorithms (10 problems)
+
+PayU heavily asks string manipulation + substring questions.
+
+#	Problem - 18, 19, 20, 
+18	Valid Parentheses
+19	Longest Palindromic Substring
+20	Longest Common Prefix
+21	String Rotation Check (s1 in s2+s2)
+22	Group Anagrams
+23	Implement atoi() (Edge cases heavy)
+24	Reverse Words in a String
+25	Valid Palindrome II (at most one deletion)
+26	Check if Strings are Isomorphic
+27	Custom String Compression ("a3b2c1")
+
+🔥 4. Linked List (7 problems)
+
+PayU LOVES linked list trick questions.
+
+#	Problem
+28	Reverse Linked List
+29	Detect Cycle in Linked List (Floyd’s Algo)
+30	Merge Two Sorted Lists
+31	Remove Nth Node from End
+32	Add Two Numbers (Linked Lists)
+33	Intersection of Two Linked Lists
+34	Flatten a Multilevel Linked List (Amazon/PayU style)
+
+🔥 5. Trees & Binary Trees (10 problems)
+
+Many PayU rounds include at least one tree problem.
+
+#	Problem
+35	Level Order Traversal
+36	Zigzag Level Order
+37	Vertical Order Traversal
+38	Boundary Traversal of Binary Tree
+39	Lowest Common Ancestor (LCA)
+40	Validate Binary Search Tree
+41	Construct Tree from Preorder & Inorder
+42	Diameter of Binary Tree
+43	Symmetric Tree
+44	Path Sum I & II
+
+🔥 6. Stack / Queue Problems (6 problems)
+
+PayU frequently tests monotonic stacks + queue logic.
+
+#	Problem
+45	Min Stack
+46	Next Greater Element
+47	Daily Temperatures (Monotonic stack)
+48	Basic Calculator / Infix Expression Evaluation
+49	Implement Queue Using Stacks
+50	Largest Rectangle in Histogram (Very common)
+
+🔥 7. Dynamic Programming (8 problems)
+
+DP is common in PayU online assessments.
+
+#	Problem
+51	Climbing Stairs (basic DP)
+52	House Robber I/II
+53	Coin Change
+54	Longest Increasing Subsequence
+55	Edit Distance
+56	Longest Common Subsequence
+57	0/1 Knapsack
+58	Partition Equal Subset Sum
+
+🔥 8. Graph / BFS / DFS (4 problems)
+
+Not as common as trees or arrays, but still appear.
+
+#	Problem
+59	Number of Islands
+60	Rotten Oranges
+61	Graph Cycle Detection
+62	Topological Sort (Kahn’s)
+
+🎯 Summary: What You Should Master for PayU
+
+PayU most frequently asks:
+Arrays (two pointers, hashing, prefix-sum)
+Strings (parsing, substring problems, palindrome, isomorphic)
+Sliding window
+Linked lists
+Trees (traversals + LCA)
+Stack & monotonic stack
+Medium-level DP
+Implementation-heavy coding
+
+If you finish the above 55 problems, you're prepared not only for PayU, but also Atlassian, Rippling, Nutanix, Uber, 
+Microsoft, Amazon, Google, Meta and most top product-based companies.
