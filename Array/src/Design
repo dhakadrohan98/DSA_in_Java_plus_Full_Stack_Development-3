@@ -1,0 +1,6 @@
+Contact{name, Set<String>}
+
+Contact{
+	String name,
+	
+}
