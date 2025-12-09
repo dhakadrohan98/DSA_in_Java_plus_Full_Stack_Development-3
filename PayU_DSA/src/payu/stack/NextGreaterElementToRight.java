@@ -2,11 +2,15 @@ package payu.stack;
 
 import java.util.*;
 
-class Pair {
+//1100+ DSA problems solved on Leetcode.png
+//
+//Avid problem solver with 1100+ DSA problems solved on LeetCode, GeeksforGeeks & Codeforces.
+
+class Pair1 {
 	int val;
 	int index;
 
-	public Pair(int val, int index) {
+	public Pair1(int val, int index) {
 		this.val = val;
 		this.index = index;
 	}
@@ -47,7 +51,7 @@ public class NextGreaterElementToRight {
 	// find nearest smaller left
 	private static int[] nsl(int[] arr) {
 		int n = arr.length;
-		Stack<Pair> st = new Stack<>();
+		Stack<Pair1> st = new Stack<>();
 		int[] ans = new int[n];
 		int i = 0;
 		while (i < n) {
@@ -59,40 +63,42 @@ public class NextGreaterElementToRight {
 			if (!st.isEmpty() && arr[i] > st.peek().val) {
 				ans[i] = st.peek().index;
 			} else {
-				//if no smaller element is found for a index i then store -1 for that i in ans array for nsl
+				// if no smaller element is found for a index i then store -1 for that i in ans
+				// array for nsl
 				ans[i] = -1;
 			}
-			st.push(new Pair(arr[i], i));
+			st.push(new Pair1(arr[i], i));
 			i++;
 		}
 		return ans;
 	}
-	
-	// find nearest smaller right.
-		private static int[] nsr(int[] arr) {
-			int n = arr.length;
-			Stack<Pair> st = new Stack<>();
-			int[] ans = new int[n];
-			int i = n-1;
-			while (i >= 0) {
-				if (!st.isEmpty()) {
-					while (!st.isEmpty() && arr[i] <= st.peek().val) {
-						st.pop();
-					}
-				}
-				if (!st.isEmpty() && arr[i] > st.peek().val) {
-					ans[i] = st.peek().index;
-				} else {
-					//if no smaller element is found for a index i then store n for that i in ans array for nsr
-					ans[i] = n;
-				}
-				st.push(new Pair(arr[i], i));
-				i--;
-			}
-			return ans;
-		}
 
-	//main method	
+	// find nearest smaller right.
+	private static int[] nsr(int[] arr) {
+		int n = arr.length;
+		Stack<Pair1> st = new Stack<>();
+		int[] ans = new int[n];
+		int i = n - 1;
+		while (i >= 0) {
+			if (!st.isEmpty()) {
+				while (!st.isEmpty() && arr[i] <= st.peek().val) {
+					st.pop();
+				}
+			}
+			if (!st.isEmpty() && arr[i] > st.peek().val) {
+				ans[i] = st.peek().index;
+			} else {
+				// if no smaller element is found for a index i then store n for that i in ans
+				// array for nsr
+				ans[i] = n;
+			}
+			st.push(new Pair1(arr[i], i));
+			i--;
+		}
+		return ans;
+	}
+
+	// main method
 	public static void main(String[] args) {
 		int[] arr = new int[] { 1, 1, 2, 3, 5, 4, 5, 1 };
 		System.out.println("NSR");
