@@ -1,4 +1,4 @@
-package org.test;
+package org.payU.test;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -74,7 +74,7 @@ class ContactMerger {
 
 
 
-public class MergePhoneDirectory {
+public class MergePhoneDirectory_LLD {
 
 	public static void main(String[] args) {
 		//phone1

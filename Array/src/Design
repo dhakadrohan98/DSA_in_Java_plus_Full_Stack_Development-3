@@ -1,6 +1,4 @@
 Contact{name, Set<String>}
-
-Contact{
-	String name,
-	
+ContactMerger() {
+  List<Contact> merge(List<Contact> list1, List<Contact> list2);
 }
