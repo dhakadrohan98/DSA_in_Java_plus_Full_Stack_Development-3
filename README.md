@@ -63,7 +63,7 @@ Common contest templates
 
 📚 Problem Count
 
-600+ Problems Solved
+1000+ Problems Solved
 Across platforms like LeetCode, Codeforces, CodeChef, GFG, AtCoder & more.
 
 Every pattern folder contains multiple problems with optimal solutions.
