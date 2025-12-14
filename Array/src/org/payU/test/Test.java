@@ -1,4 +1,4 @@
-package org.test;
+package org.payU.test;
 
 import java.util.Arrays;
 import java.util.List;
