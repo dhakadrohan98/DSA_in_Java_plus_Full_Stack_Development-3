@@ -36,8 +36,6 @@ public class JumpGameII {
 		return rec(0, 0, nums, dp);
 	}
 
-	}
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
