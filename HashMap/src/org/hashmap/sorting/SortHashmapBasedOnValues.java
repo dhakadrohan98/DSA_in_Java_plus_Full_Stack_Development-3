@@ -7,6 +7,12 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+//✅ Approach (Correct & Common)
+//🔹 Steps
+//Convert entrySet() to a List
+//Sort the list using Collections.sort() with a lambda comparator
+//Put entries into a LinkedHashMap to preserve order
+
 public class SortHashmapBasedOnValues {
 
 	static class Pair {
@@ -23,7 +29,7 @@ public class SortHashmapBasedOnValues {
 	public static void main(String[] args) {
 		Map<Character, Integer> hmap = new HashMap<>();
 		hmap.put('t', 1);
-		hmap.put('r', 1);
+		hmap.put('r', 3);
 		hmap.put('e', 2);
 
 		List<Pair> list = new ArrayList<>();
@@ -35,13 +41,13 @@ public class SortHashmapBasedOnValues {
 		Collections.sort(list, (p1, p2) -> {
 			return p2.freq - p1.freq;
 		});
-		Map<Character, Integer> lmap = new LinkedHashMap<>();
+		Map<Character, Integer> lhmap = new LinkedHashMap<>();
 		for (Pair p : list) {
-			lmap.put(p.ch, p.freq);
+			lhmap.put(p.ch, p.freq);
 		}
-		System.out.println(lmap);
+		System.out.println(lhmap);
 		System.out.println();
-		for (char ch : lmap.keySet()) {
+		for (char ch : lhmap.keySet()) {
 			System.out.print(ch + ", ");
 		}
 
