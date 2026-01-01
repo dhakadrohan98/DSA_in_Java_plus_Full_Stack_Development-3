@@ -2,6 +2,11 @@ package org.fenwick;
 
 import java.util.Scanner;
 
+//range sum, Count -> O(logn)
+//update - O(logn)
+
+//uses: prefixSum, Point updates
+
 public class FenwickTree_Impl {
 
 	static int n = (int)10e5;

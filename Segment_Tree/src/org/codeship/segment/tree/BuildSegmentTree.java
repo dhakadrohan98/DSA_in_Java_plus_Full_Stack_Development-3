@@ -1,7 +1,11 @@
 package org.codeship.segment.tree;
 
 //TC: O(2N) = O(N)
-//SC: O(2N)
+//SC: O(4N)
+
+//range sum, min, max, GCD, Count, XOR etc -> O(logn)
+//update - O(logn)
+//SC- O(4n)
 public class BuildSegmentTree {
 
 	static int st[];
