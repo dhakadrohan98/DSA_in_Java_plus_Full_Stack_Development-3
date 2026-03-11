@@ -6,7 +6,7 @@ public class DeleteRootNodeFromMaxHeap {
 
 	// To heapify a subtree rooted with node i which is
 	// an index in arr[].Nn is size of heap
-	static void heapify(int arr[], int n, int i) {
+	private static void heapify(int arr[], int n, int i) {
 		while (i < n) {
 			int left = -1;
 			int right = -1;
@@ -45,7 +45,7 @@ public class DeleteRootNodeFromMaxHeap {
 	}
 
 	// Function to delete the root from Heap
-	static int deleteRoot(int arr[], int n) {
+	private static int deleteRoot(int arr[], int n) {
 		// Get the last element
 		int lastElement = arr[n - 1];
 		// Replace root with first element, consider indexing of arr starting from 1
@@ -59,7 +59,7 @@ public class DeleteRootNodeFromMaxHeap {
 	}
 
 	/* A utility function to print array of size N */
-	static void printArray(int arr[], int n) {
+	private static void printArray(int arr[], int n) {
 		for (int i = 0; i < n; ++i)
 			System.out.print(arr[i] + " ");
 		System.out.println();
@@ -74,7 +74,7 @@ public class DeleteRootNodeFromMaxHeap {
 		// / \
 		// 2 4
 		//0th index element is neglected.
-		int arr[] = { 0, 10, 5, 3, 2, 4 };
+		int arr[] = {0, 10, 5, 3, 2, 4 };
 		// new size of arr after deleting root node
 		int n = deleteRoot(arr, arr.length);
 		printArray(arr, n);
