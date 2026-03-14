@@ -16,7 +16,7 @@ public class DeleteFromMaxHeap {
 				if (left >= n) {
 					break;
 				}
-				
+				//left index is under array length
 				if(arr[i] < arr[left]) {
 					swap(arr, i, left);
 					i = left;
@@ -66,9 +66,9 @@ public class DeleteFromMaxHeap {
 		// Array representation of Max-Heap
 		// 10
 		// / \
-		// 5 3
+		// 4 5
 		// / \
-		// 2 4
+		// 3 2
 		// 0th index element is neglected.
 		int[] arr = {0, 10, 5, 3, 2, 4 };
 		int[] arr1 = {40, 30, 10, 20, 15};
