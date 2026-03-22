@@ -38,6 +38,7 @@ public class SingleThreadedCPU2 {
 				// sort on the basis of index
 				return Integer.compare(a[2], b[2]);
 			}
+			//sort on basis of enqueue time
 			return Integer.compare(a[0], b[0]);
 		});
 		// Pair -> {process_time, indx}
