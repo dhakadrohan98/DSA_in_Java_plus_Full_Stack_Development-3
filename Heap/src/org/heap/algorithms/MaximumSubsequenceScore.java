@@ -5,6 +5,8 @@ import java.util.PriorityQueue;
 
 public class MaximumSubsequenceScore {
 
+	//TC: O(n) + O(n*logn) + O(n*logn)
+	//SC: O(2n)
 	public static long maxScore(int[] nums1, int[] nums2, int k) {
 		int n = nums1.length;
 		// pair (b, a)
