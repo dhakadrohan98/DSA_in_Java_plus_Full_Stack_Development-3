@@ -1,4 +1,4 @@
-package com.four.medium.revision;
+package com.codeship.medium.revision3;
 
 public class RearrangeElementsBySign {
 
