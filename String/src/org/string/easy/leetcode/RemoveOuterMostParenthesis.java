@@ -1,11 +1,10 @@
-package org.string.leetcode.mediumProblems.revision3;
+package org.string.easy.leetcode;
 
 import java.util.*;
 
 public class RemoveOuterMostParenthesis {
 	// TC: O(n)
 	// SC: O(n)
-
 	public String removeOuterParentheses(String s) {
 		Stack<Character> st = new Stack<>();
 		StringBuilder sb = new StringBuilder();
